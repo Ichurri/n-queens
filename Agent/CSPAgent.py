@@ -10,7 +10,7 @@ class CSPAgent(Agent):
         self.alive = True
 
     def is_consistent(self, variable, value):
-        # verifies if assigning a value to a variable is consistent with current constraints.
+        # Verifies if assigning a value to a variable is consistent with the current constraints.
         for (var, constraint) in self.constraints.get(variable, {}).items():
             if var in self.assignments and not constraint(value, self.assignments[var]):
                 return False

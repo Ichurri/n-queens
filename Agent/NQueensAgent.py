@@ -22,7 +22,7 @@ class NQueensAgent(CSPAgent):
         return True
 
     def backtracking(self):
-        # Modified method to find all CSP solutions using backtracking.
+        # Modified method to find all solutions to the CSP using backtracking.
         if len(self.assignments) == len(self.variables):
             self.solutions.append(self.assignments.copy())
             return None

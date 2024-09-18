@@ -3,10 +3,10 @@ class Environment:
         self.agents = []
 
     def get_perceptions(self, agent):
-        raise Exception("Implementation does not exist")
+        raise Exception("No implementation exists")
 
     def execute(self, agent):
-        raise Exception("Implementation does not exist")
+        raise Exception("No implementation exists")
 
     def evolve(self):
         if not self.terminate():

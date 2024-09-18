@@ -15,6 +15,18 @@ class NQueensEnvironment(Environment):
         if solutions:
             print(f"{len(solutions)} solutions were found:")
             for i, solution in enumerate(solutions):
-                print(f"Solution {i + 1}: {solution}")
+                print(f"\nSolution {i + 1}: {solution}")
+                self.display_board(solution)
         else:
             print("No solutions were found.")
+
+    def display_board(self, solution):
+        n = len(solution)
+        for row in range(n):
+            row_str = ""
+            for column in range(n):
+                if solution.get(row) == column:
+                    row_str += " Q "
+                else:
+                    row_str += " . "
+            print(row_str)
