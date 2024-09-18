@@ -26,4 +26,4 @@ class Agent:
         return self.__enabled
 
     def program(self):
-        raise Exception("No implementation exists")
+        raise Exception("Implementation does not exist")
