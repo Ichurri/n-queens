@@ -12,8 +12,7 @@ This project implements a solution to the **N-Queens Problem** using Constraint 
 5. [How to Run the Program](#how-to-run-the-program)
 6. [Requirements](#requirements)
 7. [Future Improvements](#future-improvements)
-8. [Contributing](#contributing)
-9. [License](#license)
+8. [License](#license)
 
 ## Overview
 
